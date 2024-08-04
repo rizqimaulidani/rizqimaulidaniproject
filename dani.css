@@ -1,0 +1,95 @@
+/* styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #001524;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #001929;
+    color: #e1e5f2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #e1e5f2;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #16425b;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #16425b;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: space-between
+    }
+
+.project-container {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.project {
+    flex: 0 0 30%; /* Flex basis for responsive layout */
+    margin: 10px;
+    background: #e1e5f2;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project h3 {
+    padding: 10px;
+}
+       
+.deskripsi {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #001929;
+    color: #e1e5f2;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .project {
+        flex: 0 0 100%; /* Stack projects on smaller screens */
+    }
+}
